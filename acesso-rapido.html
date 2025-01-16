@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso Rápido</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
+  <style>
+    /* Include only the necessary styles for the Acesso Rápido section */
+    .acesso-rapido-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 60px;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeInUp 0.6s forwards;
+      animation-delay: 0.4s;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .doc-card {
+      background: #ffffff;
+      width: 280px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeInUp 0.5s forwards;
+      transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    }
+    .doc-card:nth-child(odd) {
+      animation-delay: 0.6s;
+    }
+    .doc-card:nth-child(even) {
+      animation-delay: 0.8s;
+    }
+    .doc-card:hover {
+      box-shadow: 0 8px 14px rgba(0,0,0,0.15);
+      transform: translateY(-4px);
+      background: #1abc9c;
+      color: #ffffff;
+    }
+    .doc-card i {
+      font-size: 2.2rem;
+      color: #1abc9c;
+      margin-bottom: 15px;
+      transition: color 0.3s ease;
+    }
+    .doc-card:hover i {
+      color: #ffffff;
+    }
+    .doc-card h4 {
+      font-size: 1rem;
+      color: #16a085;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+    .doc-card:hover h4 {
+      color: #ffffff;
+    }
+    .doc-card a {
+      text-decoration: none;
+      color: #ffffff;
+      background: #1abc9c;
+      padding: 8px 15px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-top: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .doc-card:hover a {
+      background: #16a085;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="acesso-rapido-container" data-aos="fade-up">
+    <div class="doc-card" tabindex="0">
+      <i class="fas fa-book" aria-hidden="true"></i>
+      <h4>Manual de Operações do Financiamento de Energia Solar PF</h4>
+      <a href="http://srvintranet/Arquivos/MANUAIS/2025/MPSB%20FINANCIAMENTO%20ENERGIA%20SOLAR%20PESSOA%20FÍSICA_V3.pdf" target="_blank" onclick="mostrarNotificacao('Acessando documento...');" aria-label="Acessar Manual de Operações">Acessar</a>
+    </div>
+    <div class="doc-card" tabindex="0">
+      <i class="fas fa-cogs" aria-hidden="true"></i>
+      <h4>Manual do Produto Energia Solar PF</h4>
+      <a href="http://srvintranet/Arquivos/MANUAIS/2023/MOP%20DO%20PRODUTO%20FINANCIAMENTO%20DE%20ENERGIA%20SOLAR%20PF_V2.pdf" target="_blank" onclick="mostrarNotificacao('Acessando documento...');" aria-label="Acessar Manual do Produto">Acessar</a>
+    </div>
+    <div class="doc-card" tabindex="0">
+      <i class="fas fa-file-signature" aria-hidden="true"></i>
+      <h4>Termo de Responsabilidade para Credenciamento</h4>
+      <a href="https://intrabanpis/media/285028/termo_de_responsabilidade__compromisso_e_autoriza__o_da_empresa_fornecedora_de_energia_solar.docx" target="_blank" onclick="mostrarNotificacao('Acessando documento...');" aria-label="Acessar Termo de Responsabilidade">Acessar</a>
+    </div>
+    <div class="doc-card" tabindex="0">
+      <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+      <h4>Treinamento</h4>
+      <a href="http://10.0.101.114/moodle/course/view.php?id=56" target="_blank" onclick="mostrarNotificacao('Acessando documento...');" aria-label="Acessar Treinamento">Acessar</a>
+    </div>
+    <div class="doc-card" tabindex="0">
+      <i class="fas fa-calculator" aria-hidden="true"></i>
+      <h4>Simulador de Financiamento</h4>
+      <a href="#" class="simulador-btn" onclick="abrirSimulador(); return false;" aria-label="Acessar Simulador de Financiamento">Acessar</a>
+    </div>
+    <div class="doc-card" tabindex="0">
+      <i class="fas fa-percentage" aria-hidden="true"></i>
+      <h4>Taxas Praticadas</h4>
+      <a href="https://10.0.1.239/media/307902/taxas_praticadas_v3_sucpf_janeiro_25__1_.pdf" target="_blank" onclick="mostrarNotificacao('Acessando documento...');" aria-label="Acessar Taxas Praticadas">Acessar</a>
+    </div>
+  </div>
+  <script src="https://pub-ac6bcfc686ee4220a2aacafa66b579bb.r2.dev/codigo_js.js"></script>
+</body>
+</html>
