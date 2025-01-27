@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="js-focus-visible">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARPJ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="stylespj.css">
+</head>
+<body data-aos-easing="ease" data-aos-duration="800">
+  <!-- AR Content -->
+  <div class="arpj-container" data-aos="fade-up" id="arpj-section">
+    <section class="section-divider">
+      <h2 class="section-title">Acesso Rápido aos Documentos</h2>
+      <div class="acesso-rapido-container aos-init aos-animate" data-aos="fade-up">
+        <div class="doc-card" tabindex="0">
+          <i class="fas fa-file-alt" aria-hidden="true"></i>
+          <h4>Manual de Produtos e Serviços Bancários Financiamento de Energia Solar PJ</h4>
+          <a href="http://srvintranet/Arquivos/MANUAIS/2024/MPSB%20FINANCIAMENTO%20DE%20ENERGIA%20SOLAR%20PESSOA%20JUR%c3%8dDICA_V1.pdf" target="_blank" title="MPSB"><span>Baixar</span></a>
+        </div>
+        <div class="doc-card" tabindex="0">
+          <i class="fas fa-list" aria-hidden="true"></i>
+          <h4>Manual Operacional do Produto Linha de Financiamento Energia Solar PJ</h4>
+          <a href="http://srvintranet/Arquivos/MANUAIS/2024/MPSB%20FINANCIAMENTO%20DE%20ENERGIA%20SOLAR%20PESSOA%20JUR%c3%8dDICA_V2.pdf" target="_blank" title="MOP"><span>Abrir</span></a>
+        </div>
+        <div class="doc-card" tabindex="0">
+          <i class="fas fa-sitemap" aria-hidden="true"></i>
+          <h4>Fluxo Operacional Completo</h4>
+          <a href="#" onclick="mostrarNotificacao('Acessando documento...'); return false;" aria-label="Acessar Fluxo Operacional Completo">Acessar</a>
+        </div>
+        <div class="doc-card" tabindex="0">
+          <i class="fas fa-calculator" aria-hidden="true"></i>
+          <h4>Simulador de Financiamento</h4>
+          <a href="#" class="simulador-btn" onclick="abrirSimulador(); return false;" aria-label="Acessar Simulador de Financiamento">Acessar</a>
+        </div>       
+        <div class="doc-card" tabindex="0">
+          <i class="fas fa-file-contract" aria-hidden="true"></i>
+          <h4>Taxas Praticadas</h4>
+          <a href="https://10.0.1.239/media/299360/taxas_praticadas_nubio___2_.pdf" target="_blank" title="Taxa"><span>Baixar</span></a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Scripts -->
+  <script>
+    const toggleButton = document.getElementById('toggle-dark-mode');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+  <script src="codigopj.js"></script>
+</body>
+</html>
